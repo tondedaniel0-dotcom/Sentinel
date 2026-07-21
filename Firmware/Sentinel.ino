@@ -20,9 +20,9 @@
 // ========================================
 // 1. CONFIGURATION BLYNK
 // ========================================
-#define BLYNK_TEMPLATE_ID   "TMPL2jqdidmR4"
+#define BLYNK_TEMPLATE_ID   "VOTRE_TEMPLATE_ID"
 #define BLYNK_TEMPLATE_NAME "Sentinel"
-#define BLYNK_AUTH_TOKEN    "BOF2qRS-bEwfPWT3MFa0uWwa6DdJTFCE"
+#define BLYNK_AUTH_TOKEN    "VOTRE_AUTH_TOKEN_BLYNK"
 
 // ========================================
 // 2. INCLUDES
@@ -37,8 +37,8 @@
 // ========================================
 // 3. CONFIGURATION WIFI
 // ========================================
-const char* WIFI_SSID = "DESKTOP-KR9LSRI 9495";
-const char* WIFI_PASS = "C1r27*49";
+const char* WIFI_SSID = "VOTRE_NOM_WIFI";
+const char* WIFI_PASS = "VOTRE_MOT_DE_PASSE_WIFI";
 
 // ========================================
 // 4. BROCHES CAMÉRA (CONFIG B VALIDÉE)
