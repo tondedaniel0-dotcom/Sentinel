@@ -1,71 +1,102 @@
-# 🛰️ Système Sentinel
+# 🛡️ Sentinel
+### Système de surveillance périmétrique intelligente basé sur ESP32-S3-CAM et Intelligence Artificielle
 
-## Surveillance périmétrique intelligente basée sur ESP32-S3-CAM et Edge Impulse
+Sentinel est un système embarqué de surveillance périmétrique développé dans le cadre d'un projet de Licence en Électronique et Informatique Industrielle (EII).
 
-Le Système Sentinel est un système embarqué de surveillance périmétrique intelligent conçu dans le cadre d'un projet de Licence en Électronique et Informatique Industrielle (EII) à l'IST Ouaga 2000.
-
-Il combine une double détection physique (Radar RCWL-0516 + PIR HC-SR501) avec un modèle d'intelligence artificielle embarquée exécuté sur une ESP32-S3-CAM afin de détecter automatiquement une présence humaine ou un drone et de limiter les fausses alertes.
-
----
-
-## Fonctionnalités
-
-- Détection par radar RCWL-0516
-- Détection PIR HC-SR501
-- Fusion multi-capteurs (Logique ET)
-- Caméra OV3660
-- Intelligence artificielle embarquée (Edge Impulse)
-- Classification :
-  - Humain
-  - Drone
-  - Négatif
-- Pointage laser automatique
-- Commande de deux servomoteurs SG90
-- Notification via Blynk
+Le système combine des capteurs de mouvement, une caméra intelligente et un modèle d'intelligence artificielle afin de détecter, analyser et confirmer automatiquement une intrusion humaine ou un drone avant de déclencher une alerte.
 
 ---
 
-## Matériel utilisé
+# Objectifs
+
+- Détection fiable des intrusions
+- Réduction des fausses alertes
+- Analyse d'images embarquée
+- Fonctionnement autonome
+- Notification distante via Blynk
+- Faible coût de réalisation
+
+---
+
+# Architecture du système
+
+Le système utilise :
 
 - ESP32-S3-CAM
 - Caméra OV3660
 - Radar RCWL-0516
-- PIR HC-SR501
-- 2 × Servomoteurs SG90
-- Laser KY-008
-- Buzzer actif
-- Breadboard
-- Batterie externe
+- Capteur PIR HC-SR501
+- Deux servomoteurs SG90
+- Pointeur laser KY-008
+- Buzzer
+- Plateforme Blynk
+- Modèle IA MobileNetV1 entraîné avec Edge Impulse
 
 ---
 
-## Logiciels utilisés
+# Fonctionnement
+
+1. Initialisation du système
+2. Surveillance continue
+3. Double détection (Radar + PIR)
+4. Capture d'image
+5. Analyse par Intelligence Artificielle
+6. Confirmation de la menace
+7. Déclenchement de l'alerte
+8. Retour automatique en surveillance
+
+---
+
+# Intelligence Artificielle
+
+Le modèle embarqué a été entraîné avec **Edge Impulse**.
+
+Classification :
+
+- Humain
+- Drone
+- Négatif
+
+Architecture :
+
+- MobileNetV1
+- Image : 96 × 96 pixels
+- Quantification INT8
+
+---
+
+# Outils utilisés
 
 - Arduino IDE
 - Edge Impulse
 - Blynk IoT
 - Proteus
 - Wokwi
+- Fritzing
 - Draw.io
 
 ---
 
-## Structure du dépôt
+# Structure du dépôt
 
-- Firmware : Code source ESP32-S3-CAM
-- Documentation : Rapport de projet
-- Simulation : Fichiers Wokwi et Proteus
-- PCB : Conception électronique
-- Dataset : Jeu de données d'entraînement
-- Images : Photos et illustrations
+```
+Firmware/
+Documentation/
+Simulation/
+PCB/
+Dataset/
+Images/
+```
 
 ---
 
-## Auteur
+# Auteur
 
 **TONDE Wendbenedo Daniel**
 
-Licence 3 – Électronique et Informatique Industrielle
+Étudiant en Licence 3
+
+Électronique et Informatique Industrielle
 
 IST Ouaga 2000
 
@@ -73,4 +104,6 @@ Burkina Faso
 
 ---
 
-Projet académique 2025–2026
+# Licence
+
+Projet académique réalisé dans le cadre d'un mémoire de Licence.
