@@ -1,0 +1,16 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// ========================================
+// CONFIGURATION DU RÉSEAU ET DE BLYNK
+// Renommez ce fichier en "config.h" et renseignez vos accès
+// ========================================
+
+#define BLYNK_TEMPLATE_ID   "TMPLxxxxxx"
+#define BLYNK_TEMPLATE_NAME "Sentinel"
+#define BLYNK_AUTH_TOKEN    "VOTRE_TOKEN_BLYNK"
+
+const char* WIFI_SSID = "NOM_DE_VOTRE_Réseau";
+const char* WIFI_PASS = "MOT_DE_PASSE";
+
+#endif
